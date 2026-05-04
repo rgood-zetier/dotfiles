@@ -10,6 +10,8 @@ return {
           python = {
             analysis = {
               ignore = { "*" },
+              typeCheckingMode = "off",
+              diagnosticMode = "openFilesOnly",
             },
           },
         },
