@@ -1,0 +1,11 @@
+# Neovim runtime data (regenerated per machine)
+nvim/.local/
+nvim/.cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*.swp
+*~
