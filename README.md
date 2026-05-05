@@ -13,7 +13,7 @@ git clone <repo-url> ~/dotfiles
 cd ~/dotfiles
 
 # 3. Stow configs
-stow nvim kitty tmux
+stow nvim kitty tmux x11
 
 # 4. Install fonts
 ./fonts/install.sh
