@@ -26,9 +26,13 @@ return {
           },
           python = {
             analysis = {
-              ignore = { "*" },
               typeCheckingMode = "off",
               diagnosticMode = "openFilesOnly",
+              diagnosticSeverityOverrides = {
+                reportMissingImports = "error",
+                reportUndefinedVariable = "error",
+                reportAttributeAccessIssue = "warning",
+              },
             },
           },
         },
