@@ -12,6 +12,9 @@ return {
               pycodestyle = {
                 ignore = { "E501" },
               },
+              jedi_definition = { enabled = false },
+              jedi_hover = { enabled = false },
+              jedi_references = { enabled = false },
             },
           },
         },
