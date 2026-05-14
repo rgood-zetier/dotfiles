@@ -3,6 +3,7 @@ return {
   opts = {
     servers = {
       clangd = {},
+      ruff = {},
       pylsp = {
         settings = {
           pylsp = {
@@ -13,27 +14,9 @@ return {
               pycodestyle = {
                 ignore = { "E501" },
               },
-              jedi_definition = { enabled = false },
-              jedi_hover = { enabled = false },
-              jedi_references = { enabled = false },
-            },
-          },
-        },
-      },
-      pyright = {
-        settings = {
-          pyright = {
-            disableOrganizeImports = true,
-          },
-          python = {
-            analysis = {
-              typeCheckingMode = "off",
-              diagnosticMode = "openFilesOnly",
-              diagnosticSeverityOverrides = {
-                reportMissingImports = "error",
-                reportUndefinedVariable = "error",
-                reportAttributeAccessIssue = "warning",
-              },
+              jedi_definition = { enabled = true },
+              jedi_hover = { enabled = true },
+              jedi_references = { enabled = true },
             },
           },
         },
