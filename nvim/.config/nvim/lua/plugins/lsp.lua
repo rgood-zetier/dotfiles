@@ -8,15 +8,15 @@ return {
         settings = {
           pylsp = {
             plugins = {
-              flake8 = {
-                ignore = { "E501" },
-              },
-              pycodestyle = {
-                ignore = { "E501" },
-              },
-              jedi_definition = { enabled = true },
-              jedi_hover = { enabled = true },
-              jedi_references = { enabled = true },
+              pycodestyle = { enabled = false },
+              pyflakes = { enabled = false },
+              mccabe = { enabled = false },
+              flake8 = { enabled = false },
+              pylint = { enabled = false },
+              autopep8 = { enabled = false },
+              yapf = { enabled = false },
+              rope_completion = { enabled = false },
+              rope_autoimport = { enabled = false },
             },
           },
         },
