@@ -3,6 +3,13 @@ return {
   opts = {
     servers = {
       clangd = {},
+      ["make-ls"] = {
+        cmd = { "make-ls" },
+        enabled = vim.fn.executable("make-ls") == 1,
+        filetypes = { "make" },
+        mason = false,
+        root_markers = { "Makefile", "makefile", "GNUmakefile", ".git" },
+      },
       ruff = {},
       pylsp = {
         settings = {
