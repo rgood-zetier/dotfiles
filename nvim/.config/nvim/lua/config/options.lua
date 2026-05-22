@@ -3,6 +3,19 @@
 -- Add any additional options here
 vim.opt.smoothscroll = false
 
+vim.filetype.add({
+  extension = {
+    mak = "make",
+    make = "make",
+    mk = "make",
+  },
+  pattern = {
+    [".*/GNUmakefile%..*"] = "make",
+    [".*/Makefile%..*"] = "make",
+    [".*/makefile%..*"] = "make",
+  },
+})
+
 local user_bins = {
   vim.fn.expand("~/.cargo/bin"),
   vim.fn.expand("~/.local/bin"),
